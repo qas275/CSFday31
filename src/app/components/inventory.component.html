@@ -1,0 +1,6 @@
+<div *ngFor="let fruit of fruits">
+    <img [src]="'assets/fruits/'+fruit.url+'.png'" alt="">
+    <b>{{fruit.name}}</b>
+    <button type = "button" (click)="add(fruit.name)">ADD</button>
+    <button type = "button" (click)="minus(fruit.name)">MINUS</button>
+</div>

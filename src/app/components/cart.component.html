@@ -1,0 +1,7 @@
+<div *ngFor="let item of cartList">
+    <li>
+        <img [src]="'assets/fruits/'+item.name+'.png'" alt="">
+        <b>{{item.quantity}}x{{item.name}}</b>
+        <button type = "button" (click)="remove(item.name)">REMOVE</button>
+    </li>
+</div>

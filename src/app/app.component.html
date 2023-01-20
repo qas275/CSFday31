@@ -1,0 +1,20 @@
+<h1>Shopping Cart App</h1>
+
+<table>
+  <tr>
+    <td>
+      <h2>Please Select</h2>
+    </td>
+    <td>
+      <h2>My Cart</h2>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <app-inventory (addFruit) = "add($event)" (minusFruit) = "minus($event)"></app-inventory>
+    </td>
+    <td>
+      <app-cart [cartList]="cart" (removeItem)="remove($event)"></app-cart>
+    </td>
+  </tr>
+</table>
